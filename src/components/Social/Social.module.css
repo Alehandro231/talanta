@@ -1,0 +1,15 @@
+.social {
+  width: 234px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a {
+  font-size: 16px;
+  line-height: 28px;
+  color: #e5e5e5;
+}
+
+.social a:hover {
+  color: #010101;
+}

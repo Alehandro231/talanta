@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
-import AuthorizationModal from '../components/AuthorizationModal';
+import HomePageOne from '../components/HomePageOne';
+import HomePageTwo from '../components/HomePageTwo';
 import styles from '../styles/Home.module.css';
 
 const Home: React.FC = () => {
@@ -13,11 +14,9 @@ const Home: React.FC = () => {
   ]);
 
   return (
-    <div className={styles.container}>
-      {isShowModal && <AuthorizationModal closeModal={closeModalHandler} />}
-      <main className={styles.main}>
-        <button onClick={handleAuthorizationClick}>Вход</button>
-      </main>
+    <div className={styles.page}>
+      <HomePageOne />
+      <HomePageTwo />
     </div>
   );
 };

@@ -1,0 +1,9 @@
+.illustrations {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.illustrations img {
+  position: relative;
+  left: -470px;
+}

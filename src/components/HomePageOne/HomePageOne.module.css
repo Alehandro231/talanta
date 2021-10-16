@@ -1,0 +1,29 @@
+.container {
+  height: 100vh;
+}
+
+.header {
+  margin: 49px 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  margin-top: 66px;
+}
+
+.content {
+  margin: 86px 80px 0;
+  font-size: 80px;
+  line-height: 96px;
+}
+
+.sum {
+  color: #ff5c00;
+}
+
+.footer {
+  margin: 64px 80px 120px;
+  display: flex;
+  justify-content: space-between;
+}
