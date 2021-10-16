@@ -213,7 +213,7 @@
   .main {
     margin-top: 40px;
     flex-direction: column;
-    width: 300px;
+    width: 380px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -270,6 +270,6 @@
   }
 
   .registrationButtonContainer {
-    bottom: 230px;
+    bottom: 164px;
   }
 }
