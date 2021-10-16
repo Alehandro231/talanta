@@ -1,4 +1,6 @@
 import React, { useCallback } from 'react';
+import { changePage } from '../../lib/change-page';
+import { REGISTRATION_ROUTE } from '../../lib/constants';
 import Button from '../common/Button';
 
 type RegistrationType = {
@@ -6,7 +8,8 @@ type RegistrationType = {
 }
 
 const Registration: React.FC<RegistrationType> = ({ classNames }) => {
-  const openRegistrationPage = useCallback(() => console.log('openRegistrationPage')
+  const openRegistrationPage = useCallback(() =>
+    changePage(REGISTRATION_ROUTE)
     , [])
 
   return (

@@ -1,0 +1,125 @@
+.container {
+  display: flex;
+}
+
+.header {
+  display: none;
+}
+
+.leftContent {
+  max-width: 70%;
+}
+
+.contentForm {
+  width: 510px;
+  margin-top: 110px;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.authorization {
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.authorizationButton {
+  border: none;
+  height: auto;
+  display: inline;
+  padding: 0;
+  font-size: inherit;
+  line-height: inherit;
+  background: #ffffff;
+  color: #ff5c00;
+  cursor: pointer;
+}
+
+.authorizationButton:hover {
+  background: none;
+  color: #e45300;
+}
+
+form {
+  margin-top: 8px;
+}
+
+form input {
+  margin-top: 24px;
+}
+
+.accessAgreement {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #010101;
+  opacity: 0.3;
+}
+
+.accessAgreement a {
+  margin-left: 4px;
+}
+
+.accessAgreement a:hover {
+  text-decoration: underline;
+}
+
+.registrationButton {
+  margin-top: 32px;
+  background: #ff5c00;
+  color: #ffffff;
+  border: none;
+}
+
+.registrationButton:hover {
+  background: #dd5202;
+}
+
+@media (max-width: 764px) {
+  .container {
+    display: block;
+    padding-bottom: 172px;
+  }
+
+  .leftContent {
+    display: none;
+  }
+
+  .rightContent {
+    margin: 0;
+    width: 100%;
+  }
+
+  .header {
+    display: block;
+    margin: 49px 80px 0;
+  }
+
+  .contentForm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .registrationButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 588px) {
+  .header {
+    display: block;
+    margin: 28px 24px 0;
+  }
+
+  .heading {
+    font-size: 32px;
+    line-height: 64px;
+  }
+}
