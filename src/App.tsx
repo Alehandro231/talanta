@@ -9,16 +9,19 @@ import Authorization from './pages/Authorization';
 import Login from './pages/Login';
 import Account from './pages/Account';
 import Admin from './pages/Admin';
+import CategoriesInteresets from './pages/CategoriesInteresets';
+import { ACCOUNT_ROUTE, ADMIN_ROUTE, AUTHORIZATION_ROUTE, CATEGORIES_INTERESTS_ROUTE, HOME_ROUTE, LOGIN_ROUTE } from './lib/constants';
 
 const App: React.FC = () => (
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <Route exact path={'/'} component={Home} />
-        <Route path={'/authorization'} component={Authorization} />
-        <Route path={'/login'} component={Login} />
-        <Route path={'/account'} component={Account} />
-        <Route path={'/admin'} component={Admin} />
+        <Route exact path={HOME_ROUTE} component={Home} />
+        <Route path={AUTHORIZATION_ROUTE} component={Authorization} />
+        <Route path={LOGIN_ROUTE} component={Login} />
+        <Route path={ACCOUNT_ROUTE} component={Account} />
+        <Route path={ADMIN_ROUTE} component={Admin} />
+        <Route path={CATEGORIES_INTERESTS_ROUTE} component={CategoriesInteresets} />
       </Switch>
     </Router>
   </Provider>
