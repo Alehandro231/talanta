@@ -1,0 +1,13 @@
+.logoMobile {
+  display: none;
+}
+
+@media (max-width: 588px) {
+  .logoDesctop {
+    display: none;
+  }
+
+  .logoMobile {
+    display: inline;
+  }
+}

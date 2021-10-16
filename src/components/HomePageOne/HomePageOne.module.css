@@ -1,5 +1,4 @@
 .container {
-  height: 100vh;
 }
 
 .header {
@@ -23,7 +22,61 @@
 }
 
 .footer {
-  margin: 64px 80px 120px;
+  margin: 64px 80px 0;
+  padding-bottom: 88px;
   display: flex;
   justify-content: space-between;
+}
+
+.registrationButton {
+  background: #2d44ce;
+  color: #ffffff;
+  border: none;
+}
+
+.registrationButton:hover {
+  background: #243cc9;
+}
+
+@media (max-width: 872px) {
+  .header {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .content {
+    font-size: 48px;
+    line-height: 62px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .footer {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 588px) {
+  .header {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .content {
+    font-size: 35px;
+    line-height: 47px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 48px;
+  }
 }

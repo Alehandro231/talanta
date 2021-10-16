@@ -1,13 +1,16 @@
 import React, { useCallback } from 'react';
 import Button from '../common/Button';
-import style from './Registration.module.css';
 
-const Registration: React.FC = () => {
+type RegistrationType = {
+  classNames: string;
+}
+
+const Registration: React.FC<RegistrationType> = ({ classNames }) => {
   const openRegistrationPage = useCallback(() => console.log('openRegistrationPage')
     , [])
 
   return (
-    <Button onClick={openRegistrationPage} className={style.button} >
+    <Button onClick={openRegistrationPage} className={classNames} >
       Зарегистрироваться
     </Button>
   )

@@ -1,0 +1,240 @@
+.container {
+  min-height: 100vh;
+  padding-top: 104px;
+  position: relative;
+  background: #433870;
+}
+
+.header {
+  margin: 0 300px 0 80px;
+}
+
+.header p {
+  font-size: 32px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.header p:last-child {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #c9e3ff;
+}
+
+.main {
+  margin-top: 84px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main .card {
+  width: 100%;
+  height: 344px;
+  box-sizing: border-box;
+  border: 2px solid #706699;
+  border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+}
+
+.main .card:last-child {
+  border-right: none;
+}
+
+.main .card .arrowCard {
+  position: absolute;
+  right: -19px;
+}
+
+.main .card > div {
+  text-align: center;
+}
+
+.main .card p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.main .card p span {
+  display: none;
+  margin-right: 4px;
+}
+
+.imgTablet {
+  display: none;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.registrationButtonContainer {
+  position: absolute;
+  bottom: 212px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.registrationButton {
+  background: #ff5c00;
+  color: #ffffff;
+  border: none;
+}
+
+.registrationButton:hover {
+  background: #dd5202;
+}
+
+.footer {
+  margin-top: 53px;
+  color: #c9e3ff;
+  font-size: 14px;
+  line-height: 28px;
+  padding-bottom: 24px;
+}
+
+.footer .illustrations {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.footer .illustrations img {
+  position: relative;
+  left: -470px;
+}
+
+.footer .info {
+  margin: 68px 80px 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.5;
+}
+
+.footer .info span:last-child {
+  margin-left: 40px;
+}
+
+
+@media (max-width: 872px) {
+  .container {
+    padding-top: 80px;
+  }
+
+  .header {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .header p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
+  .header p:last-child {
+    margin-top: 24px;
+    font-size: 13px;
+    line-height: 24px;
+  }
+
+  .imgDesctop {
+    display: none;
+  }
+
+  .imgTablet {
+    display: inline;
+  }
+
+  .footer .info {
+    margin: 46px 40px 0;
+  }
+
+  .registrationButtonContainer {
+    bottom: 192px;
+  }
+}
+
+@media (max-width: 588px) {
+  .container {
+    padding-top: 32px;
+  }
+
+  .header {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .header p {
+    font-size: 20px;
+    line-height: 28px;
+  }  
+
+  .main {
+    margin-top: 40px;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main .card {
+    height: auto;
+    border: none;
+    padding: 0;
+    margin-bottom: 36px;
+    justify-content: flex-start;
+  }
+
+  .main .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .main .card > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .main .card .arrowCard {
+    display: none;
+  }
+
+  .main .card p span {
+    display: inline;
+  }
+
+  .main .card p {
+    margin-left: 24px;
+  }
+
+  .imgTablet {
+    display: none;
+  }
+  
+  .imgMobile {
+    display: inline;
+  }
+
+  .footer .info {
+    display: block;
+    text-align: center;
+    margin-top: 32px;
+  }
+
+  .footer .info span {
+    display: block;
+  }
+
+  .footer .info span:last-child {
+    margin-left: 0;
+  }
+
+  .registrationButtonContainer {
+    bottom: 230px;
+  }
+}

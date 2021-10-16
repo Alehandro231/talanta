@@ -32,3 +32,15 @@
     transform: translateX(-1px);
   }
 }
+
+@media (max-width: 764px) {
+  .illustrations img {
+    max-height: 128px;
+  }
+}
+
+@media (max-width: 588px) {
+  .illustrations img {
+    max-height: 80px;
+  }
+}
