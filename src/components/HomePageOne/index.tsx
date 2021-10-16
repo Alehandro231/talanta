@@ -15,13 +15,11 @@ const HomePageOne: React.FC = () =>
     <div className={styles.main}>
       <Illustrations />
       <div className={styles.content}>
-        <p>Выиграйте <span className={styles.sum}>100 000 ₽</span></p>
-        <p>на развитие</p>
-        <p>своего таланта</p>
+        <p>Система поощрения талантов</p>
       </div>
     </div>
     <div className={styles.footer}>
-      <Registration />
+      <Registration classNames={styles.registrationButton} />
       <Social />
     </div>
   </div>;
