@@ -1,0 +1,33 @@
+.boxSale_active {
+    width        : 180px;
+    height       : 181px;
+    background   : #EBF5FF;
+    border-radius: 24px;
+    margin-right : 24px;
+}
+
+.boxSaleBox {
+    padding: 23px 0 0 23px;
+
+}
+
+.imgBoxSale {
+    padding-bottom: 25px;
+    width         : 56px;
+    height        : 56px;
+
+}
+
+.opisBoxSale {
+    padding-bottom: 10px;
+}
+
+.boxSale_passive {
+    width        : 180px;
+    height       : 181px;
+    background   : #EBF5FF;
+    opacity      : 0.5;
+    border-radius: 24px;
+    margin-right : 24px;
+
+}
