@@ -20,3 +20,15 @@
 .button:hover {
   background: #efefef;
 }
+
+.disabledButton {
+  cursor: default !important;
+  background: #D1D1D1 !important;
+  color: #000000 !important;
+}
+
+.disabledButton:hover {
+  cursor: default !important;
+  background: #D1D1D1 !important;
+  color: #000000 !important;
+}

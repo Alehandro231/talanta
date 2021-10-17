@@ -5,9 +5,10 @@ type ButtonType = {
   onClick: () => void;
   className?: string;
   type?: 'button' | 'submit';
+  disabled?: boolean;
 };
 
-const Button: React.FC<ButtonType> = ({ children, className, onClick, type = 'button' }) => {
+const Button: React.FC<ButtonType> = ({ children, className, onClick, type = 'button', disabled = false }) => {
   const onClickButton = useCallback((e) => {
     e.preventDefault();
     onClick();
@@ -17,7 +18,7 @@ const Button: React.FC<ButtonType> = ({ children, className, onClick, type = 'bu
     <button
       type={type}
       onClick={onClickButton}
-      className={`${styles.button} ${className ? className : ''}`}
+      className={`${styles.button} ${className ? className : ''} ${disabled ? styles.disabledButton : ''}`}
     >
       {children}
     </button>

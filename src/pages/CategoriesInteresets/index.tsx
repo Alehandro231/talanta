@@ -2,6 +2,8 @@ import React, { useCallback, useState } from 'react';
 import CategoryInteres from '../../components/CategoryInteres';
 import Button from '../../components/common/Button';
 import Logo from '../../components/Logo';
+import { changePage } from '../../lib/change-page';
+import { QUESTIONNAIRE } from '../../lib/constants';
 import styles from './CategoriesInteresets.module.css';
 
 const categories = [
@@ -81,12 +83,9 @@ const CategoriesInteresets: React.FC = () => {
   }, [selectedCategories, setSelectedCategories]);
 
   const nextStep = useCallback(() => {
-    console.log(selectedCategories);
-    
-    if (!selectedCategories.length) {
-      return;
+    if (selectedCategories.length) {
+      changePage(QUESTIONNAIRE);
     }
-    console.log('next step');
     
   }, [selectedCategories]);
 
@@ -106,7 +105,7 @@ const CategoriesInteresets: React.FC = () => {
         </div>
       </div>
       <div className={styles.buttonContainer}>
-        <Button onClick={nextStep} className={styles.nextStepButton}>Далее</Button>
+        <Button onClick={nextStep} disabled={!selectedCategories.length} className={styles.nextStepButton}>Далее</Button>
       </div>
     </div>
   </div>

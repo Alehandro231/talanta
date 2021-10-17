@@ -10,6 +10,7 @@
     border: 2px solid #FF5C00;
     box-sizing: border-box;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .categories_active{
@@ -26,4 +27,5 @@
     box-sizing: border-box;
     background: #FF5C00;
     border-radius: 50%;
+    cursor: pointer;
 }

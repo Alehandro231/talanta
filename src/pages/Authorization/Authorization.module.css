@@ -70,6 +70,20 @@ form input {
   background: #dd5202;
 }
 
+.info {
+  margin-top: 56px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.info a {
+  color: #ff5c00;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 764px) {
   .container {
     display: block;
