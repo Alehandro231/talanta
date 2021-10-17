@@ -1,10 +1,12 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Button from '../../components/common/Button';
 import InputField from '../../components/common/InputField';
 import Logo from '../../components/Logo';
 import { changePage } from '../../lib/change-page';
 import { ACCOUNT_ROUTE, ADMIN_DATA, ADMIN_ROUTE, RECOVER_PASSWORD, REGISTRATION_ROUTE } from '../../lib/constants';
 import AuthorizationImg from '../../public/Authorization.png';
+import { useIsAuthorized } from '../../store/User';
+import { authorization } from '../../store/User/thunks';
 import styles from './Authorization.module.css';
 
 const Authorization: React.FC = () => {
@@ -91,3 +93,7 @@ const Authorization: React.FC = () => {
 };
 
 export default Authorization;
+function dispatch(arg0: any) {
+  throw new Error('Function not implemented.');
+}
+

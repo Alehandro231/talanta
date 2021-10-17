@@ -8,36 +8,96 @@ import styles from './Questionnaire.module.css';
 
 const questionnaires = [
   {
-    eventCategory: 'Киберспорт',
-    questions: [
+    "eventCategory": "Программирование",
+    "questions": [
       {
-        name: 'вопрос',
-        type: 'checkbox',
-        answers: ['вопрос1', 'вопрос2', 'вопрос3']
+        "name": "Вы интересуетесь этой темой или серьезно занимаетесь?",
+        "type": "checkbox",
+        "answers": [
+          "Серьезно занимаюсь",
+          "Больше развлекаюсь",
+          "Нечто среднее"
+        ]
       },
       {
-        name: 'вопрос',
-        type: 'textarea',
-        answers: []
+        "name": "Скидки и бонусы какого рода Вам были бы интересны",
+        "type": "checkbox",
+        "answers": [
+          "Обучающие курсы",
+          "Скидки на оборудование"
+        ]
+      },
+      {
+        "name": "Что Вы думаете о развитии программирования в ЯНАО? Что можно сделать лучше? Как поддержать программистов?",
+        "type": "textarea",
+        "answers": [
+          "Развит слабее, чем в крупных городах. Чаще организовывать соревнования, собирать команды и отправлять на большие соревнования. Нужны кружки в школе"
+        ]
       }
     ]
   },
   {
-    eventCategory: 'Музыка',
-    questions: [
+    "eventCategory": "Киберспорт",
+    "questions": [
       {
-        name: 'вопрос',
-        type: 'checkbox',
-        answers: ['вопрос1', 'вопрос2', 'вопрос3']
+        "name": "Вы интересуетесь этой темой или серьезно занимаетесь?",
+        "type": "textarea",
+        "answers": [
+          "Серьезно занимаюсь",
+          "Больше развлекаюсь",
+          "Нечто среднее"
+        ]
       },
       {
-        name: 'вопрос',
-        type: 'textarea',
-        answers: []
+        "name": "Скидки и бонусы какого рода Вам были бы интересны",
+        "type": "checkbox",
+        "answers": [
+          "Обучающие курсы",
+          "Скидки на оборудование"
+        ]
+      },
+      {
+        "name": "Что Вы думаете о развитии киберспорта в ЯНАО? Что можно сделать лучше? Как поддержать киберспортсменов?",
+        "type": "checkbox",
+        "answers": [
+          "Мало развит, люди мало что о нем знают. Собрать кружки и чаще рассказывать об этом"
+        ]
       }
     ]
   }
 ]
+//   [
+//   {
+//     eventCategory: 'Киберспорт',
+//     questions: [
+//       {
+//         name: 'вопрос',
+//         type: 'checkbox',
+//         answers: ['вопрос1', 'вопрос2', 'вопрос3']
+//       },
+//       {
+//         name: 'вопрос',
+//         type: 'textarea',
+//         answers: []
+//       }
+//     ]
+//   },
+//   {
+//     eventCategory: 'Музыка',
+//     questions: [
+//       {
+//         name: 'вопрос',
+//         type: 'checkbox',
+//         answers: ['вопрос1', 'вопрос2', 'вопрос3']
+//       },
+//       {
+//         name: 'вопрос',
+//         type: 'textarea',
+//         answers: []
+//       }
+//     ]
+//   }
+// ]
 
 const Questionnaire: React.FC = () => {
   const [questionnaireData, setQuestionnaireData] = useState<any>([])
@@ -46,21 +106,21 @@ const Questionnaire: React.FC = () => {
   }, []);
 
   const onChangeQuestion = useCallback((categoryName: string) => (questionName: string) => (answerName: string, data: string | boolean) => {
-    if (!questionnaireData[categoryName]) {
-      questionnaireData[categoryName] = {
-        [questionName]: (typeof data === 'boolean' ? [] : ''),
-      }
-    }
-    if (typeof data === 'boolean') {
-      if (data === true) {
-        questionnaireData[categoryName][questionName].push(answerName)
-      } else {
-        questionnaireData[categoryName][questionName] =
-          questionnaireData[categoryName][questionName].filter((name: any) => name !== answerName)
-      }
-    } else {
-      questionnaireData[categoryName][questionName] = data;
-    }
+    // if (!questionnaireData[categoryName]) {
+    //   questionnaireData[categoryName] = {
+    //     [questionName]: (typeof data === 'boolean' ? [] : ''),
+    //   }
+    // }
+    // if (typeof data === 'boolean') {
+    //   if (data === true) {
+    //     questionnaireData[categoryName][questionName].push(answerName)
+    //   } else {
+    //     questionnaireData[categoryName][questionName] =
+    //       questionnaireData[categoryName][questionName].filter((name: any) => name !== answerName)
+    //   }
+    // } else {
+    //   questionnaireData[categoryName][questionName] = data;
+    // }
 
     setQuestionnaireData(questionnaireData);
   }, [questionnaireData, setQuestionnaireData]);
