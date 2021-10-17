@@ -1,7 +1,9 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
+import { userReducer } from './User';
+
 
 const reducer = {
-  
+  userData: userReducer,
 };
 
 const store = configureStore({
