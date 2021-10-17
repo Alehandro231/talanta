@@ -1,0 +1,13 @@
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.checkboxContainer img {
+  cursor: pointer;
+}
+
+.checkboxContainer span {
+  margin-left: 16px;
+}

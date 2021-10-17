@@ -1,5 +1,10 @@
+.logoDesctop {
+  cursor: pointer;
+}
+
 .logoMobile {
   display: none;
+  cursor: pointer;
 }
 
 @media (max-width: 588px) {
