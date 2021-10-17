@@ -1,0 +1,148 @@
+.container {
+
+    margin: 49px 80px 0;
+}
+
+.header {
+
+    display        : flex;
+    justify-content: space-between;
+}
+
+.header_right {
+    display: flex;
+}
+
+.imgHuman {
+    padding-right: 15px;
+}
+
+.humanName {
+    font-size  : 16px;
+    line-height: 41px;
+    font-family: 'Sharp-Grotesk';
+    font-weight: 400;
+}
+
+.boxText {
+    padding: 49px 0;
+}
+
+.textInfo {
+    font-size     : 32px;
+    line-height   : 32px;
+    padding-bottom: 19px;
+}
+
+.textInfoCalendar {
+    font-size  : 16px;
+    line-height: 32px;
+
+}
+
+.box {
+    display      : flex;
+    margin-bottom: 90px;
+}
+
+.boxSale_active {
+    width        : 180px;
+    height       : 181px;
+    background   : #EBF5FF;
+    border-radius: 24px;
+    margin-right : 24px;
+}
+
+.boxSaleBox {
+    padding: 23px 0 0 23px;
+
+}
+
+.imgBoxSale {
+    padding-bottom: 25px;
+    width         : 56px;
+    height        : 56px;
+
+}
+
+.opisBoxSale {
+    padding-bottom: 10px;
+}
+
+.boxSale_passive {
+    width        : 180px;
+    height       : 181px;
+    background   : #EBF5FF;
+    opacity      : 0.5;
+    border-radius: 24px;
+    margin-right : 24px;
+
+}
+
+.containerFoter {
+    margin    : 0 auto;
+    background: #F8F8F8;
+    
+    
+}
+
+.boxActivity {
+    width: 1440px;
+    padding: 49px 80px 0;
+    
+}
+
+.boxActivityInfo {
+    font-size    : 32px;
+    line-height  : 32px;
+    margin-bottom: 56px;
+}
+
+
+.boxActivityBox {
+    display: flex;
+    flex-wrap: wrap;
+    align-content:flex-start;
+}
+.boxActivityBoxElem {
+    background   : #FFFFFF;
+    border-radius: 24px;
+    width        : 400px;
+    height       : 307px;
+    margin-left: 40px;
+}
+
+.boxActivityElemImg {
+    border-radius : 24px 24px 0 0;
+    padding-bottom: 17px;
+}
+
+.boxActivityBoxElem_boxTxt {
+    padding-left: 24px;
+}
+
+.nameElem{
+    margin-bottom: 8px;
+}
+
+.nameElemName {
+    font-size  : 16px;
+    line-height: 32px;
+    color      : #010101;
+}
+
+.nameElemData {
+    font-size  : 14px;
+    line-height: 24px;
+    color      : #010101;
+    opacity    : 0.4;
+}
+
+
+
+.nameCat {
+    font-size  : 10px;
+    line-height: 32px;
+    color: #010101;
+    opacity: 0.4;
+}
